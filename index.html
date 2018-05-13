@@ -6,19 +6,21 @@
 	
   </head>
 <body>
-<div class="header">
+<div id="home" ""class="header">
   <img src="logo.png" width="125" height="auto"></img>
   <div class="header-right">
-    <a href="#contact">Contact</a>
+    <a href="#signIn">Sign In</a>
+    <a href="mailto:test@test.com">Contact</a>
     <a href="#about">About</a>
 	<input type="text" placeholder="Search..">
+	<a href="#"><img src="fb.png" width="50" height="auto"></img></a>
 
   </div>
 </div>
 <div class="menu">
 	<a class="select" href="#home">Home</a>
-	<a href="#">Metro Map</a>
-  	<a href="#">Trip Planner</a>
+	<a href="#map">Metro Map</a>
+  	<a href="#planner">Trip Planner</a>
 	<a href="#">Timetable</a>
 	<a href="#">Ticket & Card</a>
 	<a href="#">Promos</a>
@@ -41,6 +43,76 @@
   <span class="bullets" onclick="slide(1)"></span> 
   <span class="bullets" onclick="slide(2)"></span> 
   <span class="bullets" onclick="slide(3)"></span> 
+</div>
+<br/>
+<div>
+<table align="center" width="100%">
+	<tr>
+		<td width ="5%">
+		<td width ="30%">
+			<table border="0" background-color="dodgerblue">
+				<tr>
+					<td><img src="promo1.jpg" width="300" height="auto"></img></td>
+				</tr>
+				<tr>
+					<td><p/>
+					<div style="font-size:25px;font-family="Helvetica">Last Chance to Earn Double <br/>Points 
+					Register for Double Days <br/>and Travel Through May 19<br/><br/>
+					Get The <b>Peacock Miles Card</b><br/>
+					<p/>
+					<a href="#" align="center">Learn More</a>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width ="30%">
+			<table border="0" background-color="dodgerblue">
+				<tr>
+					<td><img src="promo2.jpg" width="300" height="auto"></img></td>
+				</tr>
+				<tr>
+					<td><p/>
+					<div style="font-size:25px;font-family="Helvetica">Save 30% with Metro Card<br/><br/>
+					New Deals Every Week <br/>
+					Valid Mondays – Fridays<br/><br/>
+					<p/>
+					<a href="#" align="center">Book Now</a><br/>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width ="30%">
+			<table border="0" background-color="dodgerblue">
+				<tr>
+					<td><img src="promo3.jpg" width="300" height="auto"></img></td>
+				</tr>
+				<tr>
+					<td><p/>
+					<div style="font-size:25px;font-family="Helvetica">20% Off with Super Fares<br/><br/>
+					Experience Delhi in Comfort <br/>
+					Valid Year-Round<br/><br/>
+					<p/>
+					<a href="#" align="center">Book Today</a><br/>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+
+<hr/>
+<div id="map" class="map">
+<h2>Metro Map</h2>
+<img src="map.jpg" class="responsive"></img>
+</div>
+
+<hr/>
+<div id="planner" class="planner">
+<h2>Trip Planner</h2>
 </div>
 	
 </body>
@@ -73,5 +145,15 @@
 	function slide(n) {
 		show(idx = n);
 	}
+	/*
+	function navigate()
+	{
+	var i;
+	var elem = document.getElementById("menuid");
+	for (i = 0; i < elem.length; i++) {
+		elem[i].ClassName = "";  
+	}
+	this.ClassName = " select";
+	}*/
 </script>
 </html>
