@@ -31,7 +31,8 @@
     float: right;
     padding: 6px;
     border: none;
-    margin-top: 2px;
+    margin-top: 6px;
+	padding-top: 6px;
     margin-right: 16px;
     font-size: 17px;
 }
@@ -104,6 +105,12 @@
 .active, .bullets:hover {
   background-color: #717171;
 }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 .responsive {
     width: 100%;
     height: auto;
