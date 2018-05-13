@@ -20,18 +20,18 @@
 	<a href="#">Metro Map</a>
   	<a href="#">Trip Planner</a>
 	<a href="#">Timetable</a>
-	<a href="#">Fare</a>
+	<a href="#">Ticket & Card</a>
 	<a href="#">Promos</a>
 </div>
 <div class="slides">
-<div class="slide-item">
+<div class="slide-item fade">
     <img src="img1.jpg" class="responsive">
 </div>	
-<div class="slide-item">
-    <img src="logo.png" class="responsive">
+<div class="slide-item fade">
+    <img src="img2.jpg" class="responsive">
 </div>	
-<div class="slide-item">
-    <img src="img1.jpg" class="responsive">
+<div class="slide-item fade">
+    <img src="img3.jpg" class="responsive">
 </div>	
 <a class="back" onclick="slideshow(-1)">&#10094;</a>
 <a class="next" onclick="slideshow(1)">&#10095;</a>
@@ -65,7 +65,7 @@
   }
 	s[idx-1].style.display = "block"; 
 	b[idx-1].className += " active";
-	setTimeout(show, 2000, n+1);
+	//setTimeout(show, 2000, n+1);
 	}
 	function slideshow(n) {
 		show(idx += n);
